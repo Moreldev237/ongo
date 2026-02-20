@@ -29,6 +29,7 @@ INSTALLED_APPS = [
 
     #applications locales
     'utilisateurs',
+    'wallet',
 
     'rest_framework',
     'corsheaders',
@@ -70,17 +71,27 @@ WSGI_APPLICATION = 'MOVENOW.wsgi.application'
 
 
 DATABASES = {
-    'default': {
+    'default': {  # base principale utilisateurs
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'utilisateurs_db',
         'USER': 'utilisateurs_user',
         'PASSWORD': 'MotDePasseFort123!',
         'HOST': 'localhost',
         'PORT': '5433',
+    },
+    'wallet': {  # base pour les wallets
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'wallet_db',
+        'USER': 'wallet_user',
+        'PASSWORD': 'MotDePasseFort123!',
+        'HOST': 'localhost',
+        'PORT': '5434',
     }
 }
 
+
 AUTH_USER_MODEL = 'utilisateurs.User'
+DATABASE_ROUTERS = ['wallet.db_routers.WalletRouter']
 
 
 # Password validation

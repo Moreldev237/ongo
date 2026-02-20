@@ -22,7 +22,7 @@ MOVENOW est une plateforme numérique de mobilité urbaine au Cameroun permettan
 
 -Le paiement via Orange monnaie,MTN monnaie,Carte BANCAIRE et c'est converti en monnaie virtuelle appeller MOVECoin
 
-**-Objectif* : digitaliser le transport urbain camerounais en offrant une solution moderne, sécurisée et optimisée pour les usagers et chauffeurs.
+**-Objectif** : digitaliser le transport urbain camerounais en offrant une solution moderne, sécurisée et optimisée pour les usagers et chauffeurs.
 
 **2️⃣ Objectifs du Projet**
 
