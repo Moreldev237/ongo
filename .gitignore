@@ -1,0 +1,4 @@
+#ignorer le fichier de base de données SQLite
+db.sqlite3  
+#ignorer l'environnement virtuel
+venv/
