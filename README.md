@@ -24,7 +24,7 @@ MOVENOW est une plateforme numérique de mobilité urbaine au Cameroun permettan
 
 **-Objectif* : digitaliser le transport urbain camerounais en offrant une solution moderne, sécurisée et optimisée pour les usagers et chauffeurs.
 
-**2️⃣ Objectifs du Projet*
+**2️⃣ Objectifs du Projet**
 
  **Objectifs principaux**
 
@@ -38,7 +38,7 @@ MOVENOW est une plateforme numérique de mobilité urbaine au Cameroun permettan
 
 -Maximiser la rentabilité de MOVENOW
 
-**3️⃣ Architecture Technique*
+**3️⃣ Architecture Technique**
 
 **3.1 Architecture logicielle**
 
@@ -70,7 +70,7 @@ Tenant Admin
 
 Tenant Entreprises partenaires (évolution future)
 
-**4️⃣ Types d’Utilisateurs*
+**4️⃣ Types d’Utilisateurs**
 
 **👤 4.1 Utilisateur (Client)**
 
@@ -86,7 +86,7 @@ Inscription / Connexion /Deconnexion / Mot de passe oublier
 
 -Covoiturage
 
-**🚖 4.2 Chauffeur*
+**🚖 4.2 Chauffeur**
 
 Inscription avec validation documents
 
@@ -98,7 +98,7 @@ Conversion MOVECoin
 
 Dashboard personnalisé
 
-**🛠 4.3 Administrateur*
+**🛠 4.3 Administrateur**
 
 Validation chauffeurs
 
@@ -112,7 +112,7 @@ Statistiques globales
 
 Paramétrage promotions
 
-**5️⃣ Véhicules Disponibles*
+**5️⃣ Véhicules Disponibles**
 
 **Types de véhicules :**
 
@@ -131,7 +131,7 @@ Paramétrage promotions
 
 🚘 Pickup
 
-**6️⃣ Fonctionnalités Principales*
+**6️⃣ Fonctionnalités Principales**
 
 **6.1 Authentification**
 
@@ -173,7 +173,7 @@ Conversion automatique en MOVECoin
 
 Déduction progressive selon les trajets
 
-**7️⃣ Système MOVECoin*
+**7️⃣ Système MOVECoin**
 
 **Principe**
 
@@ -193,7 +193,8 @@ Bonus de parrainage
 
 Cashback intelligent
 
-**8️⃣ Stratégie Marketing Rentable*
+**8️⃣ Stratégie Marketing Rentable**
+
 
  **1. Covoiturage (-25%)**
 
@@ -238,7 +239,7 @@ Le chatbot peut proposer des réductions temporaires en échange de fidélité
 
 Gestion dynamique du MOVECoin
 
-**9️⃣ Dashboard*
+**9️⃣ Dashboard**
 
 **👤 Dashboard Utilisateur**
 
@@ -292,7 +293,8 @@ Validation KYC chauffeurs
 
 Historique traçable des transactions
 
-**11️⃣ FAQ – MOVENOW*
+**11️⃣ FAQ – MOVENOW**
+
 ❓ Comment devenir chauffeur ?
 
 Inscription
