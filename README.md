@@ -4,9 +4,10 @@
 
 [![Django](https://img.shields.io/badge/Django-4.2-green)](https://www.djangoproject.com/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14-blue)](https://www.postgresql.org/)
-[![MORELDEV237](https://img.shields.io/badge/MORELDEV237-blue)](https://www.Moreldev237.org/)
+[![MORELDEV237](https://img.shields.io/badge/MORELDEV-237-blue)](https://www.Moreldev237.org/)
 
 **1️⃣ Présentation Générale*
+
 **1. Contexte**
 
 MOVENOW est une plateforme numérique de mobilité urbaine au Cameroun permettant :
@@ -24,6 +25,7 @@ MOVENOW est une plateforme numérique de mobilité urbaine au Cameroun permettan
 **-Objectif* : digitaliser le transport urbain camerounais en offrant une solution moderne, sécurisée et optimisée pour les usagers et chauffeurs.
 
 **2️⃣ Objectifs du Projet*
+
  **Objectifs principaux**
 
 -Digitaliser les transports urbains (motos, taxis, vans, etc.)
@@ -37,6 +39,7 @@ MOVENOW est une plateforme numérique de mobilité urbaine au Cameroun permettan
 -Maximiser la rentabilité de MOVENOW
 
 **3️⃣ Architecture Technique*
+
 **3.1 Architecture logicielle**
 
 Backend : Django
@@ -68,6 +71,7 @@ Tenant Admin
 Tenant Entreprises partenaires (évolution future)
 
 **4️⃣ Types d’Utilisateurs*
+
 **👤 4.1 Utilisateur (Client)**
 
 Inscription / Connexion /Deconnexion / Mot de passe oublier
@@ -128,6 +132,7 @@ Paramétrage promotions
 🚘 Pickup
 
 **6️⃣ Fonctionnalités Principales*
+
 **6.1 Authentification**
 
 Connexion obligatoire avant la reservation
@@ -169,6 +174,7 @@ Conversion automatique en MOVECoin
 Déduction progressive selon les trajets
 
 **7️⃣ Système MOVECoin*
+
 **Principe**
 
 Chaque paiement génère du MOVECoin
@@ -188,6 +194,7 @@ Bonus de parrainage
 Cashback intelligent
 
 **8️⃣ Stratégie Marketing Rentable*
+
  **1. Covoiturage (-25%)**
 
 Optimise le remplissage
@@ -232,6 +239,7 @@ Le chatbot peut proposer des réductions temporaires en échange de fidélité
 Gestion dynamique du MOVECoin
 
 **9️⃣ Dashboard*
+
 **👤 Dashboard Utilisateur**
 
 Solde MOVECoin
