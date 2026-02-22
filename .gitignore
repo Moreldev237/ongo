@@ -2,3 +2,6 @@
 db.sqlite3  
 #ignorer l'environnement virtuel
 venv/
+
+#ALTER USER postgres WITH PASSWORD 'NouveauMotDePasse123!';
+#CREATE USER wallet_user WITH PASSWORD 'MotDePasseFort123!';
