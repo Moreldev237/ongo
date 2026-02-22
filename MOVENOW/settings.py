@@ -85,13 +85,14 @@ DATABASES = {
         'USER': 'wallet_user',
         'PASSWORD': 'MotDePasseFort123!',
         'HOST': 'localhost',
-        'PORT': '5434',
+        'PORT': '5433',
     }
 }
 
 
 AUTH_USER_MODEL = 'utilisateurs.User'
 DATABASE_ROUTERS = ['wallet.db_routers.WalletRouter']
+
 
 
 # Password validation
