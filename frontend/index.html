@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVENOW - Tableau de Bord</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">M</div>
+                <span class="text-2xl font-bold text-blue-600">MOVENOW</span>
+            </div>
+            <ul class="flex gap-6 items-center">
+                <li><a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Accueil</a></li>
+                <li><a href="orders.html" class="text-gray-700 hover:text-blue-600 font-medium">Commandes</a></li>
+                <li><a href="promotions.html" class="text-gray-700 hover:text-blue-600 font-medium">Promotions</a></li>
+                <li><a href="create-order.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 font-medium">Nouvelle Commande</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <!-- Header -->
+        <div class="mb-12">
+            <h1 class="text-4xl font-bold text-gray-900 mb-2">Tableau de Bord</h1>
+            <p class="text-gray-600">Bienvenue sur MOVENOW - Plateforme de transport collaborative</p>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+            <div class="bg-white rounded-lg shadow p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-600 text-sm font-medium">Commandes Totales</p>
+                        <p class="text-3xl font-bold text-gray-900 mt-1" id="stat-total-orders">0</p>
+                    </div>
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                        <span class="text-2xl">📦</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-600 text-sm font-medium">En Cours</p>
+                        <p class="text-3xl font-bold text-yellow-600 mt-1" id="stat-active-orders">0</p>
+                    </div>
+                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center">
+                        <span class="text-2xl">🚗</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-600 text-sm font-medium">Complétées</p>
+                        <p class="text-3xl font-bold text-green-600 mt-1" id="stat-completed-orders">0</p>
+                    </div>
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                        <span class="text-2xl">✅</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-600 text-sm font-medium">MOVECoins</p>
+                        <p class="text-3xl font-bold text-purple-600 mt-1" id="stat-movecoins">0</p>
+                    </div>
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                        <span class="text-2xl">💰</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Orders Section -->
+        <div class="bg-white rounded-lg shadow">
+            <div class="px-6 py-4 border-b border-gray-200">
+                <h2 class="text-xl font-bold text-gray-900">Commandes Récentes</h2>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead class="bg-gray-50 border-b border-gray-200">
+                        <tr>
+                            <th class="px-6 py-4 text-left text-sm font-medium text-gray-700">ID</th>
+                            <th class="px-6 py-4 text-left text-sm font-medium text-gray-700">Départ</th>
+                            <th class="px-6 py-4 text-left text-sm font-medium text-gray-700">Destination</th>
+                            <th class="px-6 py-4 text-left text-sm font-medium text-gray-700">Statut</th>
+                            <th class="px-6 py-4 text-left text-sm font-medium text-gray-700">Prix</th>
+                            <th class="px-6 py-4 text-left text-sm font-medium text-gray-700">Date</th>
+                            <th class="px-6 py-4 text-left text-sm font-medium text-gray-700">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recent-orders-list">
+                        <tr>
+                            <td colspan="7" class="px-6 py-8 text-center text-gray-500">Chargement des commandes...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Promotions Section -->
+        <div class="mt-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Promotions Actives</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="promotions-grid">
+                <div class="bg-white rounded-lg shadow p-6 text-center">
+                    <p class="text-gray-500">Chargement des promotions...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/static/js/auth.js"></script>
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html>
